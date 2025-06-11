@@ -2,6 +2,8 @@
 
 This is a static educational site built as a final project for [Mesa Community College].
 
+Beginner Level Introductory Class.
+
 ## 🧩 Features
 - Informational pages: About Us, FAQ, Programs
 - Custom CSS styling
