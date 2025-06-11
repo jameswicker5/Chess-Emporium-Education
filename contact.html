@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--REQUIRED: head semantic element, 11-7-24-->
+	<head>
+		<meta charset="UTF-8">
+
+		<!--REQUIRED: viewport metadata, 11-7-24-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--REQUIRED: title metadata, 11-15-24-->
+		<title>The Chess Emporium &ndash; &ndash; Contact Us</title>
+
+		<!--REQUIRED: description metadata, 11-30-24-->
+		<meta name="description" content="Reach out to The Chess Emporium through our communication channels.  Email us, give us a phone call, or 		review us on our social medias!">
+
+		<!--REQUIRED: keywords metadata, 11-30-24-->
+		<meta name="keywords" content="Chess, Contact Us, Email, Phone Call, Contact, Review">
+
+		<!--REQUIRED: author metadata, 11-7-24-->
+		<meta name="author" content="James Wicker">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<!--REQUIRED: body semantic element, 11-30-24-->
+	<body>
+	<!--REQUIRED: nav semantic element, 11-30-24-->
+	<nav>
+
+		<!--REQUIRED: ul element, 11-30-24-->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="programs.html">Programs</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="benefits.html">Benefits of Chess</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+	</nav>
+		<header>
+			<h1>Contact Us</h1>
+
+				<!--REQUIRED: image 1 of 5, 11-30-24-->
+				<img src="Images/celogo.png" alt="Chess Board with Knight Chess Emporium Logo">
+		</header>
+
+<!--REQUIRED: main semantic element, 11-7-24-->
+<main>
+	<h2>Future Chess Champions</h2>
+	<!--REQUIRED: form element, 11-30-24-->
+	<form method="get">
+		<!--REQUIRED: fieldset, 12-7-24-->
+		<fieldset>
+		<!--REQUIRED: legend, 12-7-24-->
+		<!--REQUIRED: phrase element 2 of 2, 12-8-24-->
+		<legend><u>Course Options and Information</u></legend>
+		<label for="myName">Name:*</label>
+		<!--REQUIRED: required, 12-1-24-->
+		<input type="text" name="myName" id="myName" required>
+		<label for="myPhone">Phone #:*</label>
+		<input type="text" name="myPhone" id="myPhone" required>
+		<label for="myEmail">E-mail:*</label>
+		<!--REQUIRED: input element 1 of 3, 11-30-24-->
+		<input type="email" name="myEmail" id="myEmail" required>
+		<label for="chessUser">Username:</label>
+		<input type="text" name="chessUser" id="chessUser">
+		<label for="myRating">Rating:</label>
+		<!--REQUIRED: input element 2 of 3, 12-7-24-->
+		<input type="number" name="myRating" id="myRating">
+		<label for="subscribe">Subscribe:</label>
+		<!--REQUIRED: checkbox, 12-7-24-->
+		<input type="checkbox" name="subscribe" id="subscribe">
+		<label for="course_input">Courses:</label>
+		<input list="courses" id="course_input" name="course_input">
+		<!--REQUIRED: input 3 of 3, 12-7-24-->
+		<label for="myDate">Date:</label>
+		<input type="date" name="myDate" id="myDate">
+		<!--REQUIRED, datalist, 12-7-24-->
+		<datalist id="courses">
+			<option value="PCC Classes">
+			<option value="After-School Classes">
+			<option value="Tournaments">
+			<option value="Chess Camps">
+			<option value="Super Groups">
+		</datalist>
+		
+	<div class="button-container">
+		<!--REQUIRED: submit button, 11-30-24-->
+		<input id="mySubmit" type="submit" value="Submit">
+		<!--REQUIRED: reset button, 12-1-24-->
+		<input type="reset" value="Reset">
+	</div>
+	</fieldset>
+	</form>
+</main>
+
+	<!--REQUIRED: footer semantic element, 11-7-24-->
+		<footer>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="programs.html">Programs</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="benefits.html">Benefits of Chess</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+
+		</footer>
+	</body>
+</html>
+	

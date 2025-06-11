@@ -1,0 +1,519 @@
+/* Table of Contents 
+
+	Reset
+	General Styling
+	Home Page
+	Programs
+	About Us
+	Benefits
+	FAQ
+	Contact
+
+*/
+
+/* Reset Styling */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul { list-style: none;
+}
+
+/*REQUIRED: media query 3 of 3, 12-8-24 Desktop version as general*/
+/* General Styling */
+html {
+	background-color: #eeeeee;
+}
+
+body { 
+	max-width: 1000px;
+	margin: auto;
+	background-color: white; color: black;
+}
+
+main { 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h1 {
+	font-family: arial, serif;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	color: #8000ff;
+	padding: 15px 30px;
+}
+
+h2 {
+	font-family: arial, serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #8000ff;
+	padding: 15px 30px;
+}
+
+/* Paragraph Styling */
+/*REQUIRED: border, 11-25-24*/
+p { font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  border-style: solid;
+  padding: 30px;
+}
+
+
+/* Header Stylings */
+header { display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+header img {
+	max-width: 50%;
+}
+
+/* Navigation Stylings */
+/*REQUIRED: dynamic styling of navigation, 11-8-24*/
+nav { 	padding-top: 1.5em;
+	padding-left: 1.5em;
+	background-color: white;
+	margin: 0;
+	z-index: 9999;
+}
+
+nav ul { list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 1em;
+}
+
+nav ul li a { text-decoration: none;
+	color: #0080ff;
+	font-weight: bold;
+	padding: 10px 15px;
+	background-color: #eeeeee;
+	border-radius: 10px;
+}
+
+nav li a:hover {
+	background-color: #c8c8c8;
+}
+
+nav a {
+	padding: 0;
+	text-decoration: none;
+	background-color: #eeeeee;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+/* Styling for Home Page */
+/* Table Styling */
+
+table { margin: 0 auto;
+	border: 1px solid #000000;
+}
+
+th, td { padding: 12px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+th { background-color: #d6d6d6;
+}
+
+caption { font-size: 1.8em;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+
+/* Styling for odd and even row */
+
+tr:nth-child(even) { background-color: #eeeeee;
+}
+
+tr:nth-child(odd) { background-color: #f9f9f9;
+}
+
+.flex-container { display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.image-row {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 100%; 
+    padding: 20px 10px; 
+}
+
+.image-row img { height: 200px;
+	width: auto;
+	object-fit: contain;
+}
+
+
+/* Styling for Programs Page */
+.custom-list {
+	background-color: #eeeeee;  
+	color: #8000FF; 
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: bold;
+	font-family: Arial, serif;
+}
+
+.custom-list dd {
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.custom-list img {
+	width: 50%;
+	height: 50%;
+	justify-content: center;
+	background-color: #eeeeee;
+	padding-bottom: 10px;
+
+}
+
+.custom-list figcaption {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	padding-bottom: 10px;
+}
+
+/* Styling for Contact Page */
+
+form { background-color: #eeeeee;
+	font-family: Arial, sans-serif;
+	width: auto;
+	padding: 10px;
+}
+
+legend {
+	font-size: 20px;
+	color: #8000FF;
+	font-weight: bold;
+	padding: 1em 50px;
+}
+/*REQUIRED: CSS float, 12-1-24*/
+label { float: left;
+	clear: left;
+	display: block;
+	width: 100px;
+	padding-right: 10px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+input { display: block;
+	margin-top: 10px;
+}
+
+textarea { display: block;
+	margin-top: 10px;
+}
+
+/*REQUIRED: border, 12-1-24*/
+input[type="submit"] {
+    	margin-top: 10px;
+    	padding: 10px 10px;
+    	background-color: #8000ff;
+    	color: white;
+}
+
+input[type="reset"] {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #8000ff;
+	color: white;
+}
+
+
+/* Style for About Us Page */
+.video-align {
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.blockquote-align {
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	text-align: left;
+	background-color: #eeeeee;
+	box-sizing: border-box;
+	border-style: solid;
+	padding: 30px;
+	font-weight: bold;
+
+}
+
+
+
+.button-container {
+    	display: flex;
+    	width: 50px;
+    	margin-top: 5px;
+		padding-left: 120px;
+		gap: 20px;
+}
+
+
+/* Footer Styling */
+footer { 
+	margin: auto;
+	padding-top: 10px;
+	text-align: center;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer ul { display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer li { margin: 10px 10px;
+}
+
+
+footer a { padding: 15px 25px;
+	color: #8000FF;
+	text-decoration: none;
+	font-size: 15px;
+	border-radius: 20px;
+}
+
+footer a:hover { background-color: #C8C8C8;
+}
+
+
+/* Dynamic Styling */
+.flow { display: block;
+	width: 100%;
+}
+
+.paragraph { font-weight: bold;
+}
+
+.chess ul { list-style-image: url('Images/chesspieces.png');
+}
+
+
+/* Media Queries */
+/*REQUIRED: media query 1 of 3, 12-8-24*/
+@media (max-width: 480px) {
+	img, iframe, figcaption {
+		display: none;
+	}
+
+	body {
+		font-size: 12px;
+		margin: 10px;
+		padding: 0;
+	}
+
+	.image-row img {
+		display: none;
+	}
+
+	nav ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav ul li {
+		display: block;
+		font-size: 6px;
+		padding: 4px 2px;
+	}
+
+	nav ul li a {
+		font-size: 3px;
+		padding: 3px 4px;
+	}
+	
+
+	footer ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+	}
+
+	footer ul li {
+		display: block;
+		font-size: 10px;
+		padding: 2px 2px;
+	}
+
+	footer ul li a {
+		font-size: 8px;
+		padding: 4px 1px;
+	}
+
+	table {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	input[type="submit"], input[type="reset"] {
+		width: 100%;
+		padding: 12px;
+		font-size: 8px;
+	}
+	h1 {
+		font-size: 14px;
+	}
+	h2 {
+		font-size: 10px;
+	}
+	p {
+		font-size: 8px;
+	}
+
+	table {
+		font-size: 10px;
+	}
+	caption {
+		font-size: 10px;
+	}
+	legend {
+		font-size: 16px;
+	}
+	blockquote {
+		font-size: 8px;
+	}
+	dt {
+		font-size: 10px;
+	}
+	.custom-list dd {
+		font-size: 8px;
+	}
+}
+/*REQUIRED: media query 2 of 3, 12-8-24*/
+@media (max-width: 768px) {
+	img {
+		width: 20%;
+		height: 20%;
+	}
+	.image-row img {
+		width: 30%;
+		height: 150px;
+		width: auto;
+		object-fit: contain;
+	}
+	nav ul {
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav ul li {
+		display: block;
+		font-size: 18px;
+		padding: 6px 2px;
+	}
+
+	nav ul li a {
+		font-size: 18px;
+		padding: 6px 10px;
+	}
+
+	footer ul {
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+	}
+
+	footer ul li {
+		display: block;
+		font-size: 18px;
+		padding: 2px 2px;
+	}
+
+	footer ul li a {
+		font-size: 18px;
+		padding: 4px 1px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 18px;
+	}
+	dt {
+		font-size: 26px;
+	}
+	.custom-list dd {
+		font-size: 20px;
+	}
+	.video-align h2 {
+		font-size: 20px;
+	}
+	.video-align iframe {
+		width: 370px;
+		height: 200px;
+		padding-right: 10px;
+	}
+}
